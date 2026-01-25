@@ -10,6 +10,7 @@
 
   - For soldering, we need three hands, but as human beings we only have two. That’s why we use a third hand tool (a stand that holds the wire in place). Adjust the helping hands so you can solder comfortably.
   - Wires are usually made of copper. Stranded wire is better for long term use, and solid wire is better for short term use.
+  - To strip a wire, clamp at the right gauge (which match the diameter of the wire), then squeeze and pull to remove the insulation.
   - Do not inhale the white smoke/ hold your breath.
   - Do not jab the tip into the brass cleaner aggressively.
   - An actuator is the opposite of a sensor.
@@ -47,6 +48,10 @@
 
 1. Clay Shirky's 4 part [video series](https://vimeo.com/channels/debugging) on debugging
 
+**Digital Multimeter (DMM) resources**
+
+1. Adafruit Digital Multimeter [tutorial](https://learn.adafruit.com/multimeters?view=all)
+2. Sparkfun Digital Multimeter [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter)
 
 **Notes taken:**
 - Soldering iron, wonderful tool to bond metals at molecular level.
@@ -56,4 +61,8 @@
 - We solder with solder XD!
 - As you solder, your tip will tend to oxidize, which means it will turn black and not want to accept solder.
 - Brass sponges pull the excess solder from your tip while allowing the tip to maintain its current heat level.
-- a rule of thumb of debugging: make it works first, then make it clean, then make it fast. Do no change more than one variables during the debugging. Do tests all the time.
+- a rule of thumb of debugging (which by the way i highly agree): make it works first, then make it clean, then make it fast. Do no change more than one variables during the debugging. Do tests all the time.
+- multimeter was first made in 1820s.
+- Continuity: whether two points are elecrically connected to one another -> great to check solder bridges
+- Resistance: keep increasing the range setting until the meter displays multiple digits appear. (you can also use smart tweezer rather than multimeter)
+- Voltage: you can also use probe meter.
