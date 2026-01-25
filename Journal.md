@@ -1,3 +1,5 @@
+> If you fail, Congratulations! Most people don't even try.
+
 ### Jan 22 Lecture
 
 - **Notes on the whiteboard:**

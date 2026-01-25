@@ -8,8 +8,8 @@ This repository is my course logbook and code archive for:
 
 Everything here supports the class workflow: documentations, iteration notes, and the code that drives them. 
 
-- Shortcuts 1: → [Learning Journal](Journal.md)
-- Shortcuts 2: → [Course Materials](https://github.com/michaelshiloh/MachineLab)
+- Shortcut 1: → [Learning Journal](Journal.md)
+- Shortcut 2: → [Course Materials](https://github.com/michaelshiloh/MachineLab)
 
 ### Quick start (Arduino)
 
