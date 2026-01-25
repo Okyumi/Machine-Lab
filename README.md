@@ -2,11 +2,14 @@
 
 This repository is my course logbook and code archive for:
 
-- **Course Code and Number:** IM-UH 2113  
-- **Course Title:** Machine Lab  
+- Course Code and Number: IM-UH 2113  
+- Course Title: Machine Lab
+- Instructor: [Michael Shiloh](https://github.com/michaelshiloh)  
 
-Everything here supports the class workflow: documentations, iteration notes, and the code that drives them.
+Everything here supports the class workflow: documentations, iteration notes, and the code that drives them. 
 
+Shortcuts 1: → **[Learning Journal](Journal.md)**
+Shortcuts 2: → **[Course Materials](https://github.com/michaelshiloh/MachineLab)**
 
 ### Quick start (Arduino)
 
