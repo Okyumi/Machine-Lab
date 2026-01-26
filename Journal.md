@@ -19,7 +19,7 @@
   - A DC motor uses voltage or PWM to control speed and torque, while a servo motor is a motor plus a gearbox, a sensor (usually a potentiometer or encoder), and control electronics in one package. Servos are good at precise positioning and holding a position against a load.
   - The black part of the iron tip is oxidized; use the shiny part for soldering.
 
-### Jan 22 Practice
+### Jan 22 Practice Soldering 1
 
 - Practice soldering some wires and some header pins to a circuit board from
   the "practice" bin. Bring the board to class and show us your five best
@@ -28,6 +28,14 @@
   <p align="center">
     <img src="media/JAN22_solderingworkstation.jpeg" alt="Soldering workstation" width="560" />
   </p>
+
+**Preparation:**
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN22_practice_prep.JPG" alt="Practice prep: wire stripping, perfboard, helping hands" width="560" style="border-radius: 8px; max-width: 100%;" />
+  </figure>
+
+  - Strip the wire -> grab header pins and a perfboard -> Use the helping hands to hold the header pins and perfboard in place, then of course use your amazing clamping skills and a steady hand to keep everything perfectly aligned -> how about a PCB?
 
 ---
 
@@ -68,3 +76,32 @@
 - Continuity: whether two points are elecrically connected to one another -> great to check solder bridges
 - Resistance: keep increasing the range setting until the meter displays multiple digits appear. (you can also use smart tweezer rather than multimeter)
 - Voltage: you can also use probe meter.
+
+---
+### Jan 26 Practice Soldering 2
+- Let’s take a look at what an unremarkable little genius solderer(?) did for her soldering practice. Shall we?
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN26_practice_headerpins.jpg" alt="Header pins soldering practice, 1st to 5th" width="560" style="border-radius: 8px; max-width: 100%;" />
+  </figure>
+
+- Header pins, from left to right 1st -> 5th. The first one looks ugly, both in shape and because I awfully bridged pin 3 and pin 4. but look at the 5th one, well, it looks decent.
+
+- Some of the difficulties I encountered : we need a forth hand for the first pin.
+- A takeaway: for a cleaner joint, feed the solder on one side of the donut, and place the iron tip on the opposite side so the solder flows toward the heat.
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN26_practice_wire1.jpg" alt="Helping hands and wire stripping" width="560" style="border-radius: 8px; max-width: 100%;" />
+  </figure>
+
+- Soldering for wires: If you always twist wire A onto wire B, wire A gradually ends up shorter. It works better if you start by twisting A around the middle of B, then twist B around A.
+
+- Some wires I soldered.
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN26_practice_wire2.jpg" alt="Wire soldering: twisting and joint stages" width="560" style="border-radius: 8px; max-width: 100%;" />
+  </figure>
+
+
+- Oh another takeaway: pick a good soldering iron in IM lab. As some makes you feel quite incompetent, others make you feel like you were born to be an engineer.
+
