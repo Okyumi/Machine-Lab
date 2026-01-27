@@ -105,3 +105,71 @@
 
 - Oh another takeaway: pick a good soldering iron in IM lab. As some makes you feel quite incompetent, others make you feel like you were born to be an engineer.
 
+### Jan 27 Lecture
+
+- **Notes on the whiteboard:**
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN27_notes.jpg" alt="Jan 27 lecture whiteboard notes" style="border-radius: 8px; width: 100%; height: auto;" />
+  </figure>
+
+- **Arduino example: multi-tasking with a servo and a switch**  
+  Based on Adafruit’s guide: [Multi-tasking the Arduino](https://learn.adafruit.com/multi-tasking-the-arduino-part-1/overview).
+
+  ```cpp
+  bool switchIsPressed = digitalRead(SWITCH_PIN);
+
+  if (switchIsPressed) {
+    for (int pos = 0; pos < 180; pos++) {
+      servoWrite(pos);
+      delay(servoDelay);
+    }
+    // additional code for sweeping back
+  }
+  ```
+
+- **Question: what’s wrong with this code?**  
+  Using `delay()` here blocks the processor: while the `for` loop is running, the switch won’t be checked again. The result is that for several seconds the switch is effectively ignored, so nothing else can happen during the sweep.
+
+- **Solution (microwave analogy): use the “blink without delay” pattern**
+
+  ```cpp
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+  }
+  ```
+
+  **Comments:**  
+  1. Notice that this is a finite state machine.  
+  2. Everything you run should use this non-blocking logic rather than `delay()`. That suggests creating a class or abstraction to manage timed actions (Object Oriented Programming).  
+  3. Remember the `detach()` function for servos when you’re done driving them.
+
+- **Sweeper example:**
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN27_sweeper_example.png" alt="Non-blocking servo sweeper example" width="560" style="border-radius: 8px; max-width: 70%;" />
+  </figure>
+
+- **Question: why don’t we need an external resistor for the push button?**
+
+  ```cpp
+  pinMode(2, INPUT_PULLUP);
+  ```
+
+  The `INPUT_PULLUP` mode turns on the Arduino’s internal pull-up resistor, so the button is safely pulled to `HIGH` when not pressed and to `LOW` when pressed, without needing an extra resistor on the breadboard. We “flip the circuit”: the logic is reversed (pressed = `LOW`).
+
+- **Homework:** modify the code / class so that you can use a potentiometer to control the speed of the servo.
+
+- **Additional demo:**
+
+  <figure align="center" style="margin: 1em 0;">
+    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 320px; width: 60%; height: auto;" />
+  </figure>
