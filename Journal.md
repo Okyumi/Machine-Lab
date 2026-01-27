@@ -31,7 +31,7 @@
 
 **Preparation:**
 
-  <figure align="center" style="margin: 1em 0;">
+  <figure align="center">
     <img src="media/JAN22_practice_prep.JPG" alt="Practice prep: wire stripping, perfboard, helping hands" width="560" style="border-radius: 8px; max-width: 100%;" />
   </figure>
 
