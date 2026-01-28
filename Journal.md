@@ -249,7 +249,7 @@
     ```
     - See [codes on potentiometer control servo](/codes/JAN28_potentiometerServo.ino) for the whole script.
     <figure align="center">
-      <img src="media/JAN28_circuit_real.jpg" alt="Jan 28 circuit (real)" style="border-radius: 8px; max-width: 560px; width: 100%; height: auto;" />
+      <img src="media/JAN28_circuit_real.jpeg" alt="Jan 28 circuit (real)" style="border-radius: 8px; max-width: 560px; width: 100%; height: auto;" />
     </figure>
 
     well, finally, it is working, and I'm very happy.
