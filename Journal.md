@@ -190,8 +190,49 @@
 2. Load the example from the [Adafruit Multitasking
    Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
    which uses the new class `Sweeper` to cause the servo motor to sweep
-   without using the `delay()` function
-3. Modify the code to read the switch, and make the servo motor stop sweeping
-   when the button is not pressed.  
-4. Modify the code further to use the reading from the potentiometer to
-   control the speed of the servo sweeps.
+   without using the `delay()` function. You can also refer to [Jan28 Adafruit Codebase](codes/JAN28_adafruitCodebase.ino).
+3. On [pushBotton.ino](codes/JAN28_pushButton.ino), the code has been modified to read the     switch, and make the servo motor stop sweeping when the button is not pressed.  
+
+    Specifically, I kept `pinMode(2, INPUT_PULLUP)`; but reverse the logic: with `INPUT_PULLUP`, pressed = `LOW`, not pressed = `HIGH`.
+
+    ```cpp
+        // INPUT_PULLUP means:
+    // pressed  -> LOW
+    // released -> HIGH
+    if (digitalRead(2) == LOW)   // change: HIGH -> LOW
+    {
+        sweeper1.Update();
+    }
+    // else: do nothing -> servo stops moving (no more updates)
+    ```
+
+    unrelated codes (including leds and sweeper 1 updates) are commented out in this script.
+
+
+4. We now want to use the reading from the potentiometer to
+   control the speed of the servo sweeps. 
+   
+   How are we supposed to do that? Recall previously we use interval to determine the speed of the servo, now given the fact that we want the servo speed to change, it would be good if we can have a functon to actually set the interval so that we can set it outside the class/initialization.
+
+    ```cpp
+            void SetInterval(int interval)
+            {
+                updateInterval = interval;
+            }
+    ```
+
+        
+    - In our loop(), we want to rescales a number from one range (potentiometer's voltage) into another range (servo's speed). We can use map. `long map(long input_value, long in_min, long in_max, long out_min, long out_max);` 
+    - Notice that the pot is a voltage divider between 5V and GND. The middle pin (wiper) outputs a voltage between 0V and 5V depending on the knob position. and arduino’s ADC turns that voltage into an integer, with 0V->0, 5V -> 1023. 
+    - Hence if we want to map 0V-5V to 5ms and 40ms, it becomes map 0-1023 to 50-40.
+
+    ```cpp
+    if (digitalRead(2) == LOW)  // pressed
+    {
+        int pot = analogRead(A0);                 // 0..1023
+        int intervalMs = map(pot, 0, 1023, 5, 40); // fast..slow (ms)
+        sweeper1.SetInterval(intervalMs);  
+        sweeper1.Update();       
+    }
+    // else: do nothing -> stops sweeping
+    ```
