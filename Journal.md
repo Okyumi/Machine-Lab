@@ -194,6 +194,10 @@
      <img src="media/JAN28_circuit.png" alt="Jan 28 servo, potentiometer, and pushbutton circuit" style="border-radius: 8px; max-width: 700px; width: 100%; height: auto;" />
    </figure>
 
+    <figure align="center">
+     <img src="media/JAN28_schematics.png" alt="Jan 28 schematics" style="border-radius: 8px; max-width: 700px; width: 100%; height: auto;" />
+   </figure>
+
 2. Load the example from the [Adafruit Multitasking
    Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
    which uses the new class `Sweeper` to cause the servo motor to sweep
