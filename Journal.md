@@ -176,7 +176,7 @@
   ```
 
   Comment: A clever (also conventional) way of reversing the direction for servo
-  
+
   Additional GIF:
 
 
@@ -189,6 +189,11 @@
 
 1. Build a circuit with one servo motor, one potentiometer, and one momentary
    switch (often called a pushbutton). 
+
+   <figure align="center">
+     <img src="media/JAN28_circuit.png" alt="Jan 28 servo, potentiometer, and pushbutton circuit" style="border-radius: 8px; max-width: 700px; width: 100%; height: auto;" />
+   </figure>
+
 2. Load the example from the [Adafruit Multitasking
    Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
    which uses the new class `Sweeper` to cause the servo motor to sweep

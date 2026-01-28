@@ -72,6 +72,11 @@ public:
   {
     servo.detach();
   }
+
+  void SetInterval(int interval)
+  {
+    updateInterval = interval;
+  }
   
   void Update()
   {
@@ -91,19 +96,19 @@ public:
 };
  
  
-Flasher led1(11, 123, 400);
-Flasher led2(12, 350, 350);
-Flasher led3(13, 200, 222);
+// Flasher led1(11, 123, 400);
+// Flasher led2(12, 350, 350);
+// Flasher led3(13, 200, 222);
 
 Sweeper sweeper1(15);
-Sweeper sweeper2(25);
+// Sweeper sweeper2(25);
  
 void setup() 
 { 
   Serial.begin(9600);
   pinMode(2, INPUT_PULLUP); 
   sweeper1.Attach(9);
-  sweeper2.Attach(10);
+//   sweeper2.Attach(10);
 } 
  
  
