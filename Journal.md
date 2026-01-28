@@ -32,7 +32,7 @@
 **Preparation:**
 
   <figure align="center">
-    <img src="media/JAN22_practice_prep.JPG" alt="Practice prep: wire stripping, perfboard, helping hands" width="560" style="border-radius: 8px; max-width: 100%;" />
+    <img src="media/JAN22_practice_prep.JPG" alt="Practice prep: wire stripping, perfboard, helping hands" style="border-radius: 8px; width: 100%; height: auto;" />
   </figure>
 
   - Strip the wire -> grab header pins and a perfboard -> Use the helping hands to hold the header pins and perfboard in place, then of course use your amazing clamping skills and a steady hand to keep everything perfectly aligned -> how about a PCB?
@@ -150,9 +150,9 @@
   **Comments:**  
   1. Notice that this is a finite state machine.  
   2. Everything you run should use this non-blocking logic rather than `delay()`. That suggests creating a class or abstraction to manage timed actions (Object Oriented Programming).  
-  3. Remember the `detach()` function for servos when you’re done driving them.
+  3. `detach()` function.
 
-- **Sweeper example:**
+- **example setup in the link:**
 
   <figure align="center" style="margin: 1em 0;">
     <img src="media/JAN27_sweeper_example.png" alt="Non-blocking servo sweeper example" width="560" style="border-radius: 8px; max-width: 70%;" />
@@ -166,10 +166,32 @@
 
   The `INPUT_PULLUP` mode turns on the Arduino’s internal pull-up resistor, so the button is safely pulled to `HIGH` when not pressed and to `LOW` when pressed, without needing an extra resistor on the breadboard. We “flip the circuit”: the logic is reversed (pressed = `LOW`).
 
-- **Homework:** modify the code / class so that you can use a potentiometer to control the speed of the servo.
+  ```cpp
+  if ((pos >= 180) || (pos <= 0)) // end of sweep
+  {
+    // reverse direction
+    increment = -increment;
+    ...
+  }
+  ```
 
-- **Additional demo:**
+  Comment: A clever (also conventional) way of reversing the direction for servo
+
 
   <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 320px; width: 60%; height: auto;" />
+    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 320px; width: 100%; height: auto;" />
   </figure>
+
+---
+### Jan 28
+
+1. Build a circuit with one servo motor, one potentiometer, and one momentary
+   switch (often called a pushbutton). 
+2. Load the example from the [Adafruit Multitasking
+   Tutorial](https://learn.adafruit.com/multi-tasking-the-arduino-part-1?view=all)
+   which uses the new class `Sweeper` to cause the servo motor to sweep
+   without using the `delay()` function
+3. Modify the code to read the switch, and make the servo motor stop sweeping
+   when the button is not pressed.  
+4. Modify the code further to use the reading from the potentiometer to
+   control the speed of the servo sweeps.
