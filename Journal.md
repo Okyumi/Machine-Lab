@@ -5,7 +5,7 @@
 - **Notes on the whiteboard:**
 
   <p align="center">
-    <img src="media/JAN22_notes_girds.jpeg" alt="Whiteboard notes (grids)" width="560" />
+    <img src="media/JAN22_notes_girds.jpeg" alt="Whiteboard notes (grids)" style="border-radius: 8px; width: 100%; height: auto;" />
   </p>
 
 - **Additional notes:**
@@ -26,7 +26,7 @@
   wires and five best pins.
 
   <p align="center">
-    <img src="media/JAN22_solderingworkstation.jpeg" alt="Soldering workstation" width="560" />
+    <img src="media/JAN22_solderingworkstation.jpeg" alt="Soldering workstation" style="border-radius: 8px; width: 100%; height: auto;" />
   </p>
 
 **Preparation:**
@@ -176,10 +176,11 @@
   ```
 
   Comment: A clever (also conventional) way of reversing the direction for servo
+  Additional GIF:
 
 
   <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 320px; width: 100%; height: auto;" />
+    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 560px; width: 100%; height: auto;" />
   </figure>
 
 ---
@@ -236,3 +237,4 @@
     }
     // else: do nothing -> stops sweeping
     ```
+    - See [codes on potentiometer control servo](/codes/JAN28_potentiometerServo.ino) for the whole script.
