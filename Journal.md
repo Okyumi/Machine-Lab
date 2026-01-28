@@ -5,7 +5,7 @@
 - **Notes on the whiteboard:**
 
   <p align="center">
-    <img src="media/JAN22_notes_girds.jpeg" alt="Whiteboard notes (grids)" style="border-radius: 8px; width: 100%; height: auto;" />
+    <img src="media/JAN22_notes_girds.jpeg" alt="Whiteboard notes (grids)" style="border-radius: 8px; width: 100%; height: auto; max-width: 700px;" />
   </p>
 
 - **Additional notes:**
@@ -26,7 +26,7 @@
   wires and five best pins.
 
   <p align="center">
-    <img src="media/JAN22_solderingworkstation.jpeg" alt="Soldering workstation" style="border-radius: 8px; width: 100%; height: auto;" />
+    <img src="media/JAN22_solderingworkstation.jpeg" alt="Soldering workstation" style="border-radius: 8px; width: 100%; height: auto; max-width: 700px;" />
   </p>
 
 **Preparation:**
@@ -82,7 +82,7 @@
 - Let’s take a look at what an unremarkable little genius solderer(?) did for her soldering practice. Shall we?
 
   <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN26_practice_headerpins.jpg" alt="Header pins soldering practice, 1st to 5th" width="560" style="border-radius: 8px; max-width: 100%;" />
+    <img src="media/JAN26_practice_headerpins.jpg" alt="Header pins soldering practice, 1st to 5th" style="border-radius: 8px; width: 100%; height: auto; max-width: 700px;" />
   </figure>
 
 - Header pins, from left to right 1st -> 5th. The first one looks ugly, both in shape and because I awfully bridged pin 3 and pin 4. but look at the 5th one, well, it looks decent.
@@ -90,16 +90,16 @@
 - Some of the difficulties I encountered : we need a forth hand for the first pin.
 - A takeaway: for a cleaner joint, feed the solder on one side of the donut, and place the iron tip on the opposite side so the solder flows toward the heat.
 
-  <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN26_practice_wire1.jpg" alt="Helping hands and wire stripping" width="560" style="border-radius: 8px; max-width: 100%;" />
+  <figure align="center">
+    <img src="media/JAN26_practice_wire1.jpg" alt="Helping hands and wire stripping" style="border-radius: 8px; width: 100%; height: auto; max-width: 700px;" />
   </figure>
 
 - Soldering for wires: If you always twist wire A onto wire B, wire A gradually ends up shorter. It works better if you start by twisting A around the middle of B, then twist B around A.
 
 - Some wires I soldered.
 
-  <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN26_practice_wire2.jpg" alt="Wire soldering: twisting and joint stages" width="560" style="border-radius: 8px; max-width: 100%;" />
+  <figure align="center">
+    <img src="media/JAN26_practice_wire2.jpg" alt="Wire soldering: twisting and joint stages" style="border-radius: 8px; width: 100%; height: auto; max-width: 700px;" />
   </figure>
 
 
@@ -109,8 +109,8 @@
 
 - **Notes on the whiteboard:**
 
-  <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN27_notes.jpg" alt="Jan 27 lecture whiteboard notes" style="border-radius: 8px; width: 100%; height: auto;" />
+  <figure align="center">
+    <img src="media/JAN27_notes.jpg" alt="Jan 27 lecture whiteboard notes" style="border-radius: 8px; width: 100%; height: auto; max-width: 700px;" />
   </figure>
 
 - **Arduino example: multi-tasking with a servo and a switch**  
@@ -154,7 +154,7 @@
 
 - **example setup in the link:**
 
-  <figure align="center" style="margin: 1em 0;">
+  <figure align="center">
     <img src="media/JAN27_sweeper_example.png" alt="Non-blocking servo sweeper example" width="560" style="border-radius: 8px; max-width: 70%;" />
   </figure>
 
@@ -176,11 +176,12 @@
   ```
 
   Comment: A clever (also conventional) way of reversing the direction for servo
+  
   Additional GIF:
 
 
-  <figure align="center" style="margin: 1em 0;">
-    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 560px; width: 100%; height: auto;" />
+  <figure align="center">
+    <img src="media/JAN27_additional_gif.gif" alt="Jan 27 additional servo/switch demo animation" style="border-radius: 8px; max-width: 700px; width: 100%; height: auto;" />
   </figure>
 
 ---
