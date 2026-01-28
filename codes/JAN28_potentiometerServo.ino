@@ -121,8 +121,10 @@ void loop()
   // released -> HIGH
   if (digitalRead(2) == LOW)   // change: HIGH -> LOW
   {
-    int pot = analogRead(A0);                 
-    int intervalMs = map(pot, 0, 1023, 5, 40); // fast..slow (ms)
+    int pot = analogRead(A0);
+    Serial.print("pot=");
+    Serial.println(pot);                 
+    int intervalMs = map(pot, 0, 1023, 0.1, 40); // fast..slow (ms)
     sweeper1.SetInterval(intervalMs);  
     sweeper1.Update();      
   }
