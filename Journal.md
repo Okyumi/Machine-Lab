@@ -253,3 +253,47 @@
     </figure>
 
     well, finally, it is working, and I'm very happy.
+    Comment: notice this breadboard, upper part is not connected to the lower part.
+
+### Jan 30 Lecture
+
+**Regarding the homework:**
+- Servo has a speed function in the library.
+- For standard positional servo, you send a command like 0°, 90°, 180°. So it knows its angle (within its limited range) and actively holds it.
+- For a continuous-rotation servo however, it becomes a servo body repurposed into a gear motor with speed control. You don’t command an angle anymore. The same PWM signal now means
+  - ~90 (or 1500 µs) = stop
+  - < 90 = spin one direction (speed increases as you go farther from 90)
+  - \> 90 = spin the other direction (speed increases as you go farther from 90)
+
+**A comment from students:** ”I connect the potentiometer, and then my Arduino got disconnected from the laptop.” How did that happen?
+
+- The Arduino tries to draw too much current → the laptop protects itself by disconnecting.
+- Why would the Arduino try to draw too much current?
+- The potentiometer drew too much current (by short circuit. See (B) in the below figure).
+- For (B), when you turn the knob of the potentiometer to a position that results in almost 0 ohm resistance, it leads to short circuit.
+- Previously $I = V/R = 5/10k = .5mA$, now $I \approx \infty$.
+
+<figure align="center">
+  <img src="media/JAN30_notes.jpeg" alt="Jan 30 notes" style="border-radius: 8px; max-width: 560px; width: 100%; height: auto;" />
+</figure>
+
+**Comment:**
+
+- What happens if you flip? It is just a matter of the direction you are turning.
+- For (C), notice that there is no connection. This is because AIN is non-invasive, and therefore acts as if it has infinite resistance (millions of Ohms range).
+
+
+**Fun Fact about GND:** 
+- In telegraphy (1800s) and later in radio, engineers often used one conductor for the signal and the Earth as the return path; so the reference point of the circuit was literally connected to a ground rod stuck in the ground. A good earth ground improved performance, noise, and safety.
+- In Arduino it becomes a reference point relative to 5V.
+
+**Multimeter:**
+- Most common case: continuity (when a breadboard hole feels like a tiny target, use a probe extender)
+- 2nd: Voltage
+- 3rd: Resistance
+- The antenna seems to pick up random electronic noise / radio waves.
+- When testing the voltage of an analog pin, one way to do it is to put the probe pin at the back of the Arduino board.
+
+**PWM:**
+
+- A typical multimeter won’t show the real PWM waveform.
