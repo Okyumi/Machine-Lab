@@ -297,3 +297,15 @@
 **PWM:**
 
 - A typical multimeter won’t show the real PWM waveform.
+
+### Jan 31
+
+Read [Circuit 5A: Motor Basics](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---v41/circuit-5a-motor-basics) of the SparkFun Inventor's Kit Experiment Guide; read the Wikipedia article on the [H-bridge](https://en.wikipedia.org/wiki/H-bridge).
+
+- Switch: stay in the position it was last in until it is switched again.
+- DC gearmotor: [question] what is the difference between DC motor and a hobby motor?
+- Switch the direction of current thru a motor by swapping the position and negative leads, the motor will spin in the opposite direction.
+- The chip on the motor driver (TB6612FNG) is another IC (integrated circuit), one designed to control motors, referred to as an H-bridge.
+- Codes. [thoughts] the variable naming here is a bit confusing, why not just name it as velocity, instead of saying "positive speed", "negative speed".
+- H-bridge: when switches s1 and s4 are closed (and s2 and s3 are open) -> a positive voltage is applied across the motor. Opening s1 and s4, close s2 and s3, the voltage is reversed.
+  - generally used to reverse the polarity/ direction of the motor, but can also used to 'brake' the motor.
