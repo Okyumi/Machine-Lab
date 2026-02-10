@@ -309,3 +309,10 @@ Read [Circuit 5A: Motor Basics](https://learn.sparkfun.com/tutorials/sparkfun-in
 - Codes. [thoughts] the variable naming here is a bit confusing, why not just name it as velocity, instead of saying "positive speed", "negative speed".
 - H-bridge: when switches s1 and s4 are closed (and s2 and s3 are open) -> a positive voltage is applied across the motor. Opening s1 and s4, close s2 and s3, the voltage is reversed.
   - generally used to reverse the polarity/ direction of the motor, but can also used to 'brake' the motor.
+
+### Feb 10 Scene shop
+ 2. Japanese pull saws is called nokogiri ノコギリ, it cuts on the pull stroke rather than push stroke (push saw) and tends to track straight more easily. In ancient time it was called のほぎり where の is the abbreviation of knife, ほ means teeth and ぎり means cut.
+  3. PVB glue is white, wood glue is yellow (do not use it on paper), superglue dry fast and brittle (can be used to stick plastic together but need a sand paper to make sure the bounding surfaces/ contact surface are rough enough).
+  4. when you drill try to drill up and down (which makes drilling easier). It should be rotating clockwise when you drill (use your thumb or index finger to press the back button on the side). and when you pull the trigger, you can determine the strength of the drill by your grip. for brittle surface like plastic, you want the tip of your drill 尖 instead of blunt.
+  5. for solid wood the fibre run along the tree, so it splits easily with the grain, but its much tougher to split across the grain.
+  6. plywood is built from layers with alternating grain directions, so it doesn’t split easily no matter which way you stress it.
